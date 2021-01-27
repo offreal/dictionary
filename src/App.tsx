@@ -1,11 +1,17 @@
 import React from 'react';
 
-const App:React.FC = () => {
+import Dictionary from './pages/Dictionary';
+import Main from './pages/Main';
+import Quiz from './pages/Quiz';
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <h1>Dictionary</h1>
-    </div>
+    <main>
+      <Main />
+      <Dictionary />
+      <Quiz />
+    </main>
   );
-}
+};
 
 export default App;
