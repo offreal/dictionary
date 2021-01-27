@@ -1,25 +1,7 @@
-import { FC } from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@material-ui/core';
-import styled from 'styled-components';
-
-const NotFound: FC = () => {
-  return (
-    <Wrapper>
-      <h1>Page Not Found</h1>
-      <div className="description">
-        <p>We couldn't find what you were looking for.</p>
-        <p>
-          Please contact the owner of the site that linked you to the original
-          URL and let them know their link is broken.
-        </p>
-        <Button variant="contained" color="primary" component={Link} to="/">
-          {'<'} Back to Main
-        </Button>
-      </div>
-    </Wrapper>
-  );
-};
+import React, { FC } from 'react'
+import { Link } from 'react-router-dom'
+import { Button } from '@material-ui/core'
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
   .description {
@@ -38,6 +20,24 @@ const Wrapper = styled.div`
   a {
     margin-top: 20px;
   }
-`;
+`
 
-export default NotFound;
+const NotFound: FC = () => {
+  return (
+    <Wrapper>
+      <h1>Page Not Found</h1>
+      <div className="description">
+        <p>We couldn't find what you were looking for.</p>
+        <p>
+          Please contact the owner of the site that linked you to the original URL and let them know their link is
+          broken.
+        </p>
+        <Button variant="contained" color="primary" component={Link} to="/">
+          {'< Back to Main'}
+        </Button>
+      </div>
+    </Wrapper>
+  )
+}
+
+export default NotFound

@@ -1,0 +1,12 @@
+{
+  "extends": ["airbnb-typescript", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "semi": "off",
+    "@typescript-eslint/semi": ["off"],
+    "no-extra-semi": "error",
+    "react/no-unescaped-entities": "off"
+  }
+}
