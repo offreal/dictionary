@@ -33,7 +33,7 @@ const NotFound: FC = () => {
           broken.
         </p>
         <Button variant="contained" color="primary" component={Link} to="/">
-          {'< Back to Main'}
+          Back to Main
         </Button>
       </div>
     </Wrapper>
