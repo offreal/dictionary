@@ -7,6 +7,7 @@ import Dictionary from './pages/Dictionary'
 import Main from './pages/Main'
 import Quiz from './pages/Quiz'
 import NotFound from './pages/NotFound'
+import routes from './constants/routes'
 
 const Wrapper = styled(Container)`
   display: block;
@@ -18,11 +19,11 @@ const App: FC = () => (
   <Wrapper maxWidth="md">
     <Router>
       <Switch>
-        <Route path="/main" component={Main} />
-        <Redirect exact from="/" to="/main" />
-        <Route path="/dictionary" component={Dictionary} />
-        <Route path="/quiz" component={Quiz} />
-        <Route path="*" component={NotFound} />
+        <Route path={routes.main} component={Main} />
+        <Redirect exact from="/" to={routes.main} />
+        <Route path={routes.dictionary} component={Dictionary} />
+        <Route path={routes.quiz} component={Quiz} />
+        <Route path={routes.notfound} component={NotFound} />
       </Switch>
     </Router>
   </Wrapper>
