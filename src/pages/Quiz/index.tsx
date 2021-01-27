@@ -1,4 +1,6 @@
-const Quiz = () => {
+import { FC } from "react"
+
+const Quiz: FC = () => {
   return (
     <h1>Quiz</h1>
   )
