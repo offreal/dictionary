@@ -5,6 +5,8 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom';
+import { Container } from '@material-ui/core';
+import styled from 'styled-components';
 
 import Dictionary from './pages/Dictionary';
 import Main from './pages/Main';
@@ -13,7 +15,7 @@ import NotFound from './pages/NotFound';
 
 const App: FC = () => {
   return (
-    <main>
+    <Wrapper maxWidth="md">
       <Router>
         <Switch>
           <Route path="/main" component={Main} />
@@ -23,8 +25,14 @@ const App: FC = () => {
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>
-    </main>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled(Container)`
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+`;
 
 export default App;
