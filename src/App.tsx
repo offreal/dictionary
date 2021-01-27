@@ -31,8 +31,8 @@ const App: FC = () => {
 
 const Wrapper = styled(Container)`
   display: block;
-  margin: 0 auto;
-  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
 `;
 
 export default App;
