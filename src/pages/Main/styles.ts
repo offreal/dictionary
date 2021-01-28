@@ -13,7 +13,7 @@ const Wrapper = styled.div`
   background: linear-gradient(179deg, #303030, #292929);
 
   p {
-    margin: 0;
+    margin: 0 auto;
   }
 `
 
