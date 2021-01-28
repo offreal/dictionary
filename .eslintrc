@@ -5,8 +5,11 @@
   },
   "rules": {
     "semi": "off",
-    "@typescript-eslint/semi": ["off"],
     "no-extra-semi": "error",
-    "react/no-unescaped-entities": "off"
+    "no-unused-vars": "off",
+    "@typescript-eslint/semi": ["off"],
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "react/no-unescaped-entities": "off",
+    "react/jsx-one-expression-per-line": "off"
   }
 }
