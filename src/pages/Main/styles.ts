@@ -1,6 +1,8 @@
 import { Button } from '@material-ui/core'
 import styled from 'styled-components'
 
+import device from '../../constants/device'
+
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,9 +13,18 @@ const Wrapper = styled.div`
   border-radius: 15px;
   text-align: center;
   background: linear-gradient(179deg, #303030, #292929);
+  user-select: none;
 
   p {
     margin: 0 auto;
+  }
+
+  @media ${device.tablet} {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
   }
 `
 
@@ -33,8 +44,11 @@ const SectionButtons = styled(Section)`
 `
 
 const TitleIcon = styled.div`
+  text-align: center;
+
   button {
-    display: block;
+    display: inline-block;
+    padding: 0;
     background: transparent;
     border: none;
     outline: none;
