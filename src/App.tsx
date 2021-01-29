@@ -8,11 +8,20 @@ import Main from './pages/Main'
 import Quiz from './pages/Quiz'
 import NotFound from './pages/NotFound'
 import routes from './constants/routes'
+import device from './constants/device'
 
 const Wrapper = styled(Container)`
-  display: block;
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media ${device.tablet} {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    height: calc(${window.innerHeight * 0.01}px * 100);
+    margin: 0;
+    padding: 0;
+  }
 `
 
 const App: FC = () => (
