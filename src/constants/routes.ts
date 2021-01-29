@@ -1,8 +1,4 @@
-type TRoutes = {
-  [key: string]: string
-}
-
-const routes: TRoutes = {
+const routes = {
   main: '/main',
   dictionary: '/dictionary',
   quiz: '/quiz',
